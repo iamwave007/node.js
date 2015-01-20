@@ -1,0 +1,9 @@
+{
+  "firebase": "nodelearn",
+  "public": "/Users/macbookpro/Desktop/ond/OneDrive/ESL/node",
+  "ignore": [
+    "firebase.json",
+    "**/.*",
+    "**/node_modules/**"
+  ]
+}
