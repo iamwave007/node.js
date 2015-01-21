@@ -18,6 +18,21 @@ var Bear= require('./app/models/bear');
 
 
 
+// bear game
+
+       
+var bear = new Bear();      // create a new instance of the Bear model
+bear.name = "firstRun";  // set the bears name (comes from the request)
+
+// save the bear and check for errors
+bear.save(function(err) {
+    if (err)
+       console.log(err);
+    else{console.log("new bear made")}
+});
+
+
+
 
 
 

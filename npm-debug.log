@@ -1,120 +1,257 @@
 0 info it worked if it ends with ok
-1 verbose cli [ 'node', '/usr/local/bin/npm', 'update', '-g', 'nodemon' ]
+1 verbose cli [ 'node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'nodemon',
+1 verbose cli   '1.3.0' ]
 2 info using npm@1.4.28
 3 info using node@v0.10.35
-4 verbose request where is /nodemon
-5 verbose request registry https://registry.npmjs.org/
-6 verbose request id 92405012f02a5180
-7 verbose url raw /nodemon
-8 verbose url resolving [ 'https://registry.npmjs.org/', './nodemon' ]
-9 verbose url resolved https://registry.npmjs.org/nodemon
-10 verbose request where is https://registry.npmjs.org/nodemon
-11 info trying registry request attempt 1 at 23:48:53
-12 verbose etag "7XW4CLQNQOU0VB33CRUW2ICCH"
-13 http GET https://registry.npmjs.org/nodemon
-14 http 200 https://registry.npmjs.org/nodemon
-15 silly registry.get cb [ 200,
-15 silly registry.get   { date: 'Tue, 20 Jan 2015 04:48:53 GMT',
-15 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
-15 silly registry.get     etag: '"DGBEECSKDJ05MQWQOVWS4ISSK"',
-15 silly registry.get     'content-type': 'application/json',
-15 silly registry.get     'cache-control': 'max-age=60',
-15 silly registry.get     'content-length': '140029',
-15 silly registry.get     'accept-ranges': 'bytes',
-15 silly registry.get     via: '1.1 varnish',
-15 silly registry.get     age: '0',
-15 silly registry.get     'x-served-by': 'cache-dfw1823-DFW',
-15 silly registry.get     'x-cache': 'HIT',
-15 silly registry.get     'x-cache-hits': '1',
-15 silly registry.get     'x-timer': 'S1421729333.826798,VS0,VE62',
-15 silly registry.get     vary: 'Accept',
-15 silly registry.get     'keep-alive': 'timeout=10, max=50',
-15 silly registry.get     connection: 'Keep-Alive' } ]
-16 info outdated updating [ [ '/usr/local/lib', 'nodemon', '1.2.1', '1.3.1', '1.3.1', 'latest' ] ]
-17 verbose install where,what [ '/usr/local/lib', [ 'nodemon@1.3.1' ] ]
-18 verbose cache add [ 'nodemon@1.3.1', null ]
-19 verbose cache add name=undefined spec="nodemon@1.3.1" args=["nodemon@1.3.1",null]
-20 verbose parsed url { protocol: null,
-20 verbose parsed url   slashes: null,
-20 verbose parsed url   auth: null,
-20 verbose parsed url   host: null,
-20 verbose parsed url   port: null,
-20 verbose parsed url   hostname: null,
-20 verbose parsed url   hash: null,
-20 verbose parsed url   search: null,
-20 verbose parsed url   query: null,
-20 verbose parsed url   pathname: 'nodemon@1.3.1',
-20 verbose parsed url   path: 'nodemon@1.3.1',
-20 verbose parsed url   href: 'nodemon@1.3.1' }
-21 verbose cache add name="nodemon" spec="1.3.1" args=["nodemon","1.3.1"]
-22 verbose parsed url { protocol: null,
-22 verbose parsed url   slashes: null,
-22 verbose parsed url   auth: null,
-22 verbose parsed url   host: null,
-22 verbose parsed url   port: null,
-22 verbose parsed url   hostname: null,
-22 verbose parsed url   hash: null,
-22 verbose parsed url   search: null,
-22 verbose parsed url   query: null,
-22 verbose parsed url   pathname: '1.3.1',
-22 verbose parsed url   path: '1.3.1',
-22 verbose parsed url   href: '1.3.1' }
-23 verbose addNamed [ 'nodemon', '1.3.1' ]
-24 verbose addNamed [ '1.3.1', '1.3.1' ]
-25 silly lockFile 05cda281-nodemon-1-3-1 nodemon@1.3.1
-26 verbose lock nodemon@1.3.1 /Users/macbookpro/.npm/05cda281-nodemon-1-3-1.lock
-27 verbose request where is /nodemon
-28 verbose request registry https://registry.npmjs.org/
-29 verbose url raw /nodemon
-30 verbose url resolving [ 'https://registry.npmjs.org/', './nodemon' ]
-31 verbose url resolved https://registry.npmjs.org/nodemon
-32 verbose request where is https://registry.npmjs.org/nodemon
-33 info trying registry request attempt 1 at 23:49:15
-34 verbose etag "DGBEECSKDJ05MQWQOVWS4ISSK"
-35 http GET https://registry.npmjs.org/nodemon
-36 http 304 https://registry.npmjs.org/nodemon
-37 silly registry.get cb [ 304,
-37 silly registry.get   { date: 'Tue, 20 Jan 2015 04:49:15 GMT',
-37 silly registry.get     server: 'Apache',
-37 silly registry.get     via: '1.1 varnish',
-37 silly registry.get     'last-modified': 'Tue, 20 Jan 2015 04:49:15 GMT',
-37 silly registry.get     'cache-control': 'max-age=60',
-37 silly registry.get     etag: '"DGBEECSKDJ05MQWQOVWS4ISSK"',
-37 silly registry.get     age: '22',
-37 silly registry.get     'x-served-by': 'cache-dfw1831-DFW',
-37 silly registry.get     'x-cache': 'HIT',
-37 silly registry.get     'x-cache-hits': '1',
-37 silly registry.get     'x-timer': 'S1421729355.514089,VS0,VE0',
-37 silly registry.get     vary: 'Accept',
-37 silly registry.get     'content-length': '0',
-37 silly registry.get     'keep-alive': 'timeout=10, max=50',
-37 silly registry.get     connection: 'Keep-Alive' } ]
-38 verbose etag https://registry.npmjs.org/nodemon from cache
-39 silly lockFile f5aa97c4-js-org-nodemon-nodemon-1-3-1-tgz https://registry.npmjs.org/nodemon/-/nodemon-1.3.1.tgz
-40 verbose lock https://registry.npmjs.org/nodemon/-/nodemon-1.3.1.tgz /Users/macbookpro/.npm/f5aa97c4-js-org-nodemon-nodemon-1-3-1-tgz.lock
-41 verbose addRemoteTarball [ 'https://registry.npmjs.org/nodemon/-/nodemon-1.3.1.tgz',
-41 verbose addRemoteTarball   '17ed3de7d1d3cb37f8bebbc4b1b68dcde8d5c9df' ]
-42 info retry fetch attempt 1 at 23:49:15
-43 verbose fetch to= /var/folders/pm/9sj9vktd651f7hmhvg5yj4lc0000gp/T/npm-92731-o4r6QrTo/registry.npmjs.org/nodemon/-/nodemon-1.3.1.tgz
-44 http GET https://registry.npmjs.org/nodemon/-/nodemon-1.3.1.tgz
-45 http 200 https://registry.npmjs.org/nodemon/-/nodemon-1.3.1.tgz
-46 silly lockFile f5aa97c4-js-org-nodemon-nodemon-1-3-1-tgz https://registry.npmjs.org/nodemon/-/nodemon-1.3.1.tgz
-47 silly lockFile f5aa97c4-js-org-nodemon-nodemon-1-3-1-tgz https://registry.npmjs.org/nodemon/-/nodemon-1.3.1.tgz
-48 silly lockFile 05cda281-nodemon-1-3-1 nodemon@1.3.1
-49 silly lockFile 05cda281-nodemon-1-3-1 nodemon@1.3.1
-50 error Error: EACCES, mkdir '/Users/macbookpro/.npm/nodemon/1.3.1'
-50 error  { [Error: EACCES, mkdir '/Users/macbookpro/.npm/nodemon/1.3.1']
-50 error   errno: 3,
-50 error   code: 'EACCES',
-50 error   path: '/Users/macbookpro/.npm/nodemon/1.3.1' }
-51 error Please try running this command again as root/Administrator.
-52 error System Darwin 14.0.0
-53 error command "node" "/usr/local/bin/npm" "update" "-g" "nodemon"
-54 error cwd /Users/macbookpro/Desktop/ond/OneDrive/ESL/node
-55 error node -v v0.10.35
-56 error npm -v 1.4.28
-57 error path /Users/macbookpro/.npm/nodemon/1.3.1
-58 error code EACCES
-59 error errno 3
-60 error stack Error: EACCES, mkdir '/Users/macbookpro/.npm/nodemon/1.3.1'
-61 verbose exit [ 3, true ]
+4 verbose cache add [ 'nodemon', null ]
+5 verbose cache add name=undefined spec="nodemon" args=["nodemon",null]
+6 verbose parsed url { protocol: null,
+6 verbose parsed url   slashes: null,
+6 verbose parsed url   auth: null,
+6 verbose parsed url   host: null,
+6 verbose parsed url   port: null,
+6 verbose parsed url   hostname: null,
+6 verbose parsed url   hash: null,
+6 verbose parsed url   search: null,
+6 verbose parsed url   query: null,
+6 verbose parsed url   pathname: 'nodemon',
+6 verbose parsed url   path: 'nodemon',
+6 verbose parsed url   href: 'nodemon' }
+7 verbose cache add [ '1.3.0', null ]
+8 verbose cache add name=undefined spec="1.3.0" args=["1.3.0",null]
+9 verbose parsed url { protocol: null,
+9 verbose parsed url   slashes: null,
+9 verbose parsed url   auth: null,
+9 verbose parsed url   host: null,
+9 verbose parsed url   port: null,
+9 verbose parsed url   hostname: null,
+9 verbose parsed url   hash: null,
+9 verbose parsed url   search: null,
+9 verbose parsed url   query: null,
+9 verbose parsed url   pathname: '1.3.0',
+9 verbose parsed url   path: '1.3.0',
+9 verbose parsed url   href: '1.3.0' }
+10 silly lockFile 5e0ad839-1-3-0 1.3.0
+11 verbose lock 1.3.0 /Users/macbookpro/.npm/5e0ad839-1-3-0.lock
+12 silly lockFile 1625b929-nodemon nodemon
+13 verbose lock nodemon /Users/macbookpro/.npm/1625b929-nodemon.lock
+14 silly lockFile 5e0ad839-1-3-0 1.3.0
+15 silly lockFile 5e0ad839-1-3-0 1.3.0
+16 silly lockFile 1625b929-nodemon nodemon
+17 silly lockFile 1625b929-nodemon nodemon
+18 verbose addNamed [ '1.3.0', '' ]
+19 verbose addNamed [ null, '*' ]
+20 silly lockFile a9f33be9-1-3-0 1.3.0@
+21 verbose lock 1.3.0@ /Users/macbookpro/.npm/a9f33be9-1-3-0.lock
+22 verbose addNamed [ 'nodemon', '' ]
+23 verbose addNamed [ null, '*' ]
+24 silly lockFile 4f5e51c6-nodemon nodemon@
+25 verbose lock nodemon@ /Users/macbookpro/.npm/4f5e51c6-nodemon.lock
+26 silly addNameRange { name: 'nodemon', range: '*', hasData: false }
+27 silly addNameRange { name: '1.3.0', range: '*', hasData: false }
+28 verbose request where is /1.3.0
+29 verbose request registry https://registry.npmjs.org/
+30 verbose request id 195138d91e40d0a9
+31 verbose url raw /1.3.0
+32 verbose url resolving [ 'https://registry.npmjs.org/', './1.3.0' ]
+33 verbose url resolved https://registry.npmjs.org/1.3.0
+34 verbose request where is https://registry.npmjs.org/1.3.0
+35 info trying registry request attempt 1 at 04:20:05
+36 http GET https://registry.npmjs.org/1.3.0
+37 verbose request where is /nodemon
+38 verbose request registry https://registry.npmjs.org/
+39 verbose url raw /nodemon
+40 verbose url resolving [ 'https://registry.npmjs.org/', './nodemon' ]
+41 verbose url resolved https://registry.npmjs.org/nodemon
+42 verbose request where is https://registry.npmjs.org/nodemon
+43 info trying registry request attempt 1 at 04:20:05
+44 verbose etag "DGBEECSKDJ05MQWQOVWS4ISSK"
+45 http GET https://registry.npmjs.org/nodemon
+46 http 304 https://registry.npmjs.org/nodemon
+47 silly registry.get cb [ 304,
+47 silly registry.get   { date: 'Tue, 20 Jan 2015 09:20:06 GMT',
+47 silly registry.get     server: 'Apache',
+47 silly registry.get     via: '1.1 varnish',
+47 silly registry.get     'last-modified': 'Tue, 20 Jan 2015 09:20:06 GMT',
+47 silly registry.get     'cache-control': 'max-age=60',
+47 silly registry.get     etag: '"DGBEECSKDJ05MQWQOVWS4ISSK"',
+47 silly registry.get     age: '0',
+47 silly registry.get     'x-served-by': 'cache-ord1728-ORD',
+47 silly registry.get     'x-cache': 'HIT',
+47 silly registry.get     'x-cache-hits': '1',
+47 silly registry.get     'x-timer': 'S1421745606.716694,VS0,VE37',
+47 silly registry.get     vary: 'Accept',
+47 silly registry.get     'content-length': '0',
+47 silly registry.get     'keep-alive': 'timeout=10, max=50',
+47 silly registry.get     connection: 'Keep-Alive' } ]
+48 verbose etag https://registry.npmjs.org/nodemon from cache
+49 http 404 https://registry.npmjs.org/1.3.0
+50 verbose headers { date: 'Tue, 20 Jan 2015 09:20:06 GMT',
+50 verbose headers   server: 'CouchDB/1.5.0 (Erlang OTP/R14B04)',
+50 verbose headers   'content-type': 'application/json',
+50 verbose headers   'cache-control': 'max-age=0',
+50 verbose headers   'content-length': '52',
+50 verbose headers   'accept-ranges': 'bytes',
+50 verbose headers   via: '1.1 varnish',
+50 verbose headers   age: '0',
+50 verbose headers   'x-served-by': 'cache-ord1733-ORD',
+50 verbose headers   'x-cache': 'MISS',
+50 verbose headers   'x-cache-hits': '0',
+50 verbose headers   'x-timer': 'S1421745606.724898,VS0,VE40',
+50 verbose headers   'keep-alive': 'timeout=10, max=50',
+50 verbose headers   connection: 'Keep-Alive' }
+51 silly registry.get cb [ 404,
+51 silly registry.get   { date: 'Tue, 20 Jan 2015 09:20:06 GMT',
+51 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R14B04)',
+51 silly registry.get     'content-type': 'application/json',
+51 silly registry.get     'cache-control': 'max-age=0',
+51 silly registry.get     'content-length': '52',
+51 silly registry.get     'accept-ranges': 'bytes',
+51 silly registry.get     via: '1.1 varnish',
+51 silly registry.get     age: '0',
+51 silly registry.get     'x-served-by': 'cache-ord1733-ORD',
+51 silly registry.get     'x-cache': 'MISS',
+51 silly registry.get     'x-cache-hits': '0',
+51 silly registry.get     'x-timer': 'S1421745606.724898,VS0,VE40',
+51 silly registry.get     'keep-alive': 'timeout=10, max=50',
+51 silly registry.get     connection: 'Keep-Alive' } ]
+52 silly lockFile a9f33be9-1-3-0 1.3.0@
+53 silly lockFile a9f33be9-1-3-0 1.3.0@
+54 silly addNameRange number 2 { name: 'nodemon', range: '*', hasData: true }
+55 silly addNameRange versions [ 'nodemon',
+55 silly addNameRange   [ '0.1.4',
+55 silly addNameRange     '0.1.5',
+55 silly addNameRange     '0.1.6',
+55 silly addNameRange     '0.1.7',
+55 silly addNameRange     '0.1.8',
+55 silly addNameRange     '0.2.0',
+55 silly addNameRange     '0.2.1',
+55 silly addNameRange     '0.2.2',
+55 silly addNameRange     '0.3.0',
+55 silly addNameRange     '0.3.1',
+55 silly addNameRange     '0.3.2',
+55 silly addNameRange     '0.4.0',
+55 silly addNameRange     '0.4.1',
+55 silly addNameRange     '0.5.0',
+55 silly addNameRange     '0.5.1',
+55 silly addNameRange     '0.5.2',
+55 silly addNameRange     '0.5.3',
+55 silly addNameRange     '0.5.4',
+55 silly addNameRange     '0.5.5',
+55 silly addNameRange     '0.5.6',
+55 silly addNameRange     '0.5.7',
+55 silly addNameRange     '0.6.0',
+55 silly addNameRange     '0.6.1',
+55 silly addNameRange     '0.6.2',
+55 silly addNameRange     '0.6.3',
+55 silly addNameRange     '0.6.4',
+55 silly addNameRange     '0.6.5',
+55 silly addNameRange     '0.6.6',
+55 silly addNameRange     '0.6.7',
+55 silly addNameRange     '0.6.8',
+55 silly addNameRange     '0.6.9',
+55 silly addNameRange     '0.6.10',
+55 silly addNameRange     '0.6.11',
+55 silly addNameRange     '0.6.12',
+55 silly addNameRange     '0.6.13',
+55 silly addNameRange     '0.6.14',
+55 silly addNameRange     '0.6.15',
+55 silly addNameRange     '0.6.16',
+55 silly addNameRange     '0.6.17',
+55 silly addNameRange     '0.6.18',
+55 silly addNameRange     '0.6.19',
+55 silly addNameRange     '0.6.20',
+55 silly addNameRange     '0.6.21',
+55 silly addNameRange     '0.6.22',
+55 silly addNameRange     '0.6.23',
+55 silly addNameRange     '0.7.0',
+55 silly addNameRange     '0.7.1',
+55 silly addNameRange     '0.7.2',
+55 silly addNameRange     '0.7.3',
+55 silly addNameRange     '0.7.4',
+55 silly addNameRange     '0.7.5',
+55 silly addNameRange     '0.7.6',
+55 silly addNameRange     '0.7.7',
+55 silly addNameRange     '0.7.8',
+55 silly addNameRange     '0.7.10',
+55 silly addNameRange     '0.9.0',
+55 silly addNameRange     '0.9.1',
+55 silly addNameRange     '0.9.2',
+55 silly addNameRange     '0.9.3',
+55 silly addNameRange     '0.9.5',
+55 silly addNameRange     '0.9.6',
+55 silly addNameRange     '0.9.7',
+55 silly addNameRange     '0.9.10',
+55 silly addNameRange     '0.9.11',
+55 silly addNameRange     '0.9.12',
+55 silly addNameRange     '0.9.14',
+55 silly addNameRange     '0.9.16',
+55 silly addNameRange     '0.9.17',
+55 silly addNameRange     '1.0.0',
+55 silly addNameRange     '1.0.1',
+55 silly addNameRange     '1.0.2',
+55 silly addNameRange     '1.0.2-rc',
+55 silly addNameRange     '0.6.10-a',
+55 silly addNameRange     '1.0.2-rc3',
+55 silly addNameRange     '1.0.2-rc4',
+55 silly addNameRange     '1.0.3',
+55 silly addNameRange     '1.0.4',
+55 silly addNameRange     '1.0.5',
+55 silly addNameRange     '1.0.6',
+55 silly addNameRange     '1.0.7',
+55 silly addNameRange     '1.0.8',
+55 silly addNameRange     '1.0.9',
+55 silly addNameRange     '1.0.10',
+55 silly addNameRange     '1.0.11',
+55 silly addNameRange     '1.0.12',
+55 silly addNameRange     '1.0.13',
+55 silly addNameRange     '1.0.14',
+55 silly addNameRange     '1.0.15',
+55 silly addNameRange     '1.0.16',
+55 silly addNameRange     '1.0.17-rc1',
+55 silly addNameRange     '1.0.17-rc2',
+55 silly addNameRange     '1.0.17',
+55 silly addNameRange     '1.0.18',
+55 silly addNameRange     '1.0.19',
+55 silly addNameRange     '1.0.20',
+55 silly addNameRange     '1.1.0-alpha',
+55 silly addNameRange     '1.1.0',
+55 silly addNameRange     '1.1.1',
+55 silly addNameRange     '1.2.0',
+55 silly addNameRange     '1.2.1',
+55 silly addNameRange     '1.3.0-0',
+55 silly addNameRange     '1.3.0-1',
+55 silly addNameRange     '1.3.0-2',
+55 silly addNameRange     '1.3.0-3',
+55 silly addNameRange     '1.3.0-4',
+55 silly addNameRange     '1.3.0-5',
+55 silly addNameRange     '1.3.0-6',
+55 silly addNameRange     '1.3.0-7',
+55 silly addNameRange     '1.3.0',
+55 silly addNameRange     '1.3.1' ] ]
+56 verbose addNamed [ 'nodemon', '1.3.1' ]
+57 verbose addNamed [ '1.3.1', '1.3.1' ]
+58 silly lockFile 05cda281-nodemon-1-3-1 nodemon@1.3.1
+59 verbose lock nodemon@1.3.1 /Users/macbookpro/.npm/05cda281-nodemon-1-3-1.lock
+60 silly lockFile 05cda281-nodemon-1-3-1 nodemon@1.3.1
+61 silly lockFile 05cda281-nodemon-1-3-1 nodemon@1.3.1
+62 silly lockFile 4f5e51c6-nodemon nodemon@
+63 silly lockFile 4f5e51c6-nodemon nodemon@
+64 error 404 404 Not Found: 1.3.0
+64 error 404
+64 error 404 '1.3.0' is not in the npm registry.
+64 error 404 You should bug the author to publish it
+64 error 404
+64 error 404 Note that you can also install from a
+64 error 404 tarball, folder, or http url, or git url.
+65 error System Darwin 14.0.0
+66 error command "node" "/usr/local/bin/npm" "install" "-g" "nodemon" "1.3.0"
+67 error cwd /Users/macbookpro/Desktop/ond/OneDrive/ESL/node
+68 error node -v v0.10.35
+69 error npm -v 1.4.28
+70 error code E404
+71 verbose exit [ 1, true ]
