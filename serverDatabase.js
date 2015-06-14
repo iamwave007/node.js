@@ -11,7 +11,6 @@ var port = process.env.PORT|| 8080;
 var router = express.Router();      
 
 var mongoose   = require('mongoose');
-//mongoose.connect('mongodb://node:node@novus.modulusmongo.net:27017/Iganiq8o'); 
 mongoose.connect('localhost:27017/bear')
 
 var Bear= require('./app/models/bear');

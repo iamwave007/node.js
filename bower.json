@@ -1,0 +1,21 @@
+{
+  "name": "node",
+  "main": "server.js",
+  "version": "0.0.0",
+  "homepage": "https://github.com/iamwave007/node.js",
+  "authors": [
+    "iamwave007 <iamwave007@hotmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "polymer": "Polymer/polymer#^1.0.0"
+  }
+}

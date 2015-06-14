@@ -92,6 +92,12 @@ var Person = mongoose.model('Person', personSchema);
 // })
 
 
+
+
+
+
+
+
 Story
 .find({ title: /timex/i})
 // .populate('fans')
@@ -101,23 +107,34 @@ Story
   console.log(story);
 })
 
-// var devin = new Person({name:"Devin", age:19});
 
-// devin.save(function(err,devin){
+// Story
+// .find({_creator: "54bf1a3c82d9330000000001"})
+// .exec(function(err,story){
 //   if(err) return console.log(err);
-//   Story
-//   .findOne({title:/timex/i})
-//   .exec(function(err,story){
-//     if(err) return console.log(err);
-//     console.log(story);
-//     console.log("from second call");
-//     story.fans.push(devin._id);
-//     story.save(function(err,after){
-//       if(!err)console.log('devin saved');
-//       console.log(after);
-//     })
-//   })
+//   console.log(story);
+//   console.log("from find by creator")
 // })
+
+
+
+var devin = new Person({name:"Devin", age:19});
+
+devin.save(function(err,devin){
+  if(err) return console.log(err);
+  Story
+  .findOne({title:/timex/i})
+  .exec(function(err,story){
+    if(err) return console.log(err);
+    console.log(story);
+    console.log("from second call");
+    story.fans.push(devin._id);
+    story.save(function(err,after){
+      if(!err)console.log('devin saved');
+      console.log(after);
+    })
+  })
+})
 
 
 
